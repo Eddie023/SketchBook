@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sketch Book</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+  integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+
+    <div class="heading-wrapper">
+
+      <div class="content-wrapper-head">
+        <div class="logo">
+        <i  id="palette" class="fas fa-palette"></i>
+        Sketch Book
+      </div>
+      <div class="save-button-head">
+        <button id="save-button"> <a id="download" download="YourFileName.jpeg">save</a> </button>
+
+      </div>
+      </div>
+    </div>
+
+    <div class="canvas-wrapper">
+      <div class="toolbar">
+        <div id="pen-style">
+          <button id="shape-circle-button" class="shape-buttons"><i class="far fa-circle"></i> </button>
+          <button id="shape-freeHand-button" class="shape-buttons"><i class="fas fa-pen"></i> </button>
+          <button id="shape-rectangle-button" class="shape-buttons"> <i class="far fa-square"></i> </button>
+          <button id="shape-line-button" class="shape-buttons"><i class="fas fa-minus"></i></button>
+          <button id="shape-eraser-button" class="shape-buttons"> <i class="fas fa-eraser"></i> </button>
+          <button id="shape-spray-button" class="shape-buttons"><i class="fas fa-spray-can"></i></button>
+            <!-- <button id="shape-fillBucket-button" class="shape-buttons">bucket</button> -->
+
+          <input id="color-picker" type="color" name="color"
+            value="#000000" />
+          <button id="reset-button" class="shape-buttons"> Reset </button>
+        </div>
+        <div id="size-controller">
+            <button id="decreaseSize" class="size-control"> - </button>
+              <button id="increaseSize" class="size-control"> + </button>
+                 <span id="size-value">10</span>
+
+        </div>
+
+
+      </div>
+      <div class="content-wrapper-body">
+
+        <div id="container">
+          <canvas id="canvas">
+
+          </canvas>
+        </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+		<script src="brushSize.js"></script>
+    <!-- <script src="fillBucket.js"></script> -->
+      <script src="shapes.js"></script>
+    	<script src="canvas.js"></script>
+        <script src="save.js"></script>
+</body>
+
+</html>
